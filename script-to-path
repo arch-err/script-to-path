@@ -1,0 +1,31 @@
+#!/bin/bash
+
+sudo echo
+
+script=$1
+
+if [ ! $script ]
+then
+echo "Provide a script!"
+echo "script-to-path <script>"
+exit 1
+fi
+
+if [ ! -e $script ]
+then
+echo "$script was not found!"
+exit 1
+fi
+
+if [ ! -e "/usr/local/scripts" ]
+then
+sudo mkdir /usr/local/scripts
+fi
+
+if [ ! "/usr/local/scripts" in $PATH ]
+then
+export PATH=/usr/local/scripts:$PATH
+fi
+
+sudo cp $script /usr/local/scripts/$script
+echo "$script added to path!"
