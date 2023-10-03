@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo echo
-
 script=$1
 
 if [ ! $script ]
@@ -22,7 +20,7 @@ then
 sudo mkdir /usr/local/scripts
 fi
 
-if [ ! "/usr/local/scripts" in $PATH ]
+if [ ! "/usr/local/scripts" == *$PATH* ]
 then
 export PATH=/usr/local/scripts:$PATH
 fi
