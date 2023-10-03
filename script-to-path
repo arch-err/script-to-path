@@ -26,4 +26,6 @@ export PATH=/usr/local/scripts:$PATH
 fi
 
 sudo cp $script /usr/local/scripts/$script
+sudo chmod +x /usr/local/scripts/$script
+
 echo "$script added to path!"
