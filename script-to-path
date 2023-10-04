@@ -15,11 +15,6 @@ echo "$script was not found!"
 exit 1
 fi
 
-if [ ! $PATH == *"/usr/local/scripts"* ]
-then
-export PATH=/usr/local/scripts:$PATH
-fi
-
 if [ ! -e "/usr/local/scripts" ]
 then
 sudo mkdir /usr/local/scripts
