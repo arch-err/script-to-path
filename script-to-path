@@ -15,6 +15,8 @@ echo "$script was not found!"
 exit 1
 fi
 
+echo $(pwd)
+
 cd ~
 
 if [ ! -d ".scripts" ]
