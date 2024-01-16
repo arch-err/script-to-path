@@ -22,7 +22,7 @@ then
 mkdir .scripts
 fi
 
-if [ ! -e ".scripts/$script" ]
+if [ -e ".scripts/$script" ]
 then
 echo "$script already in path!"
 exit 1
