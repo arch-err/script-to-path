@@ -15,14 +15,16 @@ echo "$script was not found!"
 exit 1
 fi
 
-if [ ! -e "/usr/local/scripts" ]
+cd ~
+
+if [ ! -e ".scritps" ]
 then
-sudo mkdir /usr/local/scripts
+mkdir .scripts
 fi
 
+cp $script .scripts/$script
+chmod +x .scripts/$script
 
-
-sudo cp $script /usr/local/scripts/$script
-sudo chmod +x /usr/local/scripts/$script
+cd -
 
 echo "$script added to path!"
