@@ -17,9 +17,8 @@ fi
 
 cd ~
 
-if [ ! -e ".scritps" ]
+if [ ! -d ".scritps" ]
 then
-echo does not exist
 mkdir .scripts
 fi
 
