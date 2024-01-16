@@ -22,7 +22,13 @@ then
 mkdir .scripts
 fi
 
-cp -r $script .scripts/$script
+if [ ! -e ".scripts/$script" ]
+then
+echo "$script already in path!"
+exit 1
+fi
+
+cp -r $script .scripts
 chmod +x .scripts/$script
 
 cd -
