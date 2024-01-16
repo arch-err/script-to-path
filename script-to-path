@@ -22,7 +22,7 @@ then
 mkdir .scripts
 fi
 
-cp $script .scripts/$script
+cp -r $script .scripts/$script
 chmod +x .scripts/$script
 
 cd -
