@@ -28,7 +28,7 @@ echo "$script already in path!"
 exit 1
 fi
 
-cd -
+cd - > /dev/null
 cp $script ~/.scripts
 chmod +x ~/.scripts/$script
 
