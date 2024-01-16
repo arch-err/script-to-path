@@ -28,9 +28,8 @@ echo "$script already in path!"
 exit 1
 fi
 
+cd -
 cp $script .scripts
 chmod +x .scripts/$script
-
-cd -
 
 echo "$script added to path!"
