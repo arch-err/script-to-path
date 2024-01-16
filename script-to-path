@@ -17,7 +17,7 @@ fi
 
 cd ~
 
-if [ ! -d ".scritps" ]
+if [ ! -d ".scripts" ]
 then
 mkdir .scripts
 fi
@@ -28,7 +28,7 @@ echo "$script already in path!"
 exit 1
 fi
 
-cp -r $script .scripts
+cp $script .scripts
 chmod +x .scripts/$script
 
 cd -
