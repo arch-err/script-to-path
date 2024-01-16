@@ -29,7 +29,7 @@ exit 1
 fi
 
 cd -
-cp $script .scripts
-chmod +x .scripts/$script
+cp $script ~/.scripts
+chmod +x ~/.scripts/$script
 
 echo "$script added to path!"
