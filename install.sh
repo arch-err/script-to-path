@@ -1,5 +1,4 @@
 wgetout=$(wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path")
-echo "$wgetout suu"
 chmod +x script-to-path
 ./script-to-path script-to-path
 rm script-to-path
