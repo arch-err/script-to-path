@@ -20,6 +20,7 @@ echo "export PATH=/home/$user/.scripts:$PATH" >> .bashrc
 echo "export PATH=/home/$user/.scripts:$PATH" >> .zshrc
 cd - > /dev/null
 else
+export run PATH=/$user/.scripts:$PATH
 cd ~
 echo "export PATH=/$user/.scripts:$PATH" >> .bashrc
 echo "export PATH=/$user/.scripts:$PATH" >> .zshrc
