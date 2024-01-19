@@ -1,4 +1,5 @@
-wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path" 1> /dev/null || exit 1
+wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path" | wgetout=$1
+echo $wgetout
 chmod +x script-to-path
 ./script-to-path script-to-path
 rm script-to-path
