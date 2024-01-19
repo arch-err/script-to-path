@@ -5,4 +5,8 @@ Adds a script to /home/user/.scripts/ which is is added to PATH
  ```bash
  source <(wget -qO- https://raw.githubusercontent.com/py-er/script-to-path/main/install.sh)
  ```
+ - Usage:
+ ```bash
+ script-to-path <script>
+ ```
  
