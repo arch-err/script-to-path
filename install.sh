@@ -1,4 +1,9 @@
-wgetout=$(wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path")
+wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path" 2> /dev/null
+if ! [[ $(ls) == *"script-to-path"* ]]
+then
+echo "Script-to-path could not be installed. Check internet connection and directory permissions"
+exit 1
+fi
 chmod +x script-to-path
 ./script-to-path script-to-path
 rm script-to-path
