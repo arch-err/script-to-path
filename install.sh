@@ -1,5 +1,5 @@
 wget "https://raw.githubusercontent.com/py-er/script-to-path/main/script-to-path" | wgetout=$1
-echo $wgetout
+#echo $wgetout
 chmod +x script-to-path
 ./script-to-path script-to-path
 rm script-to-path
