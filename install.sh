@@ -9,5 +9,5 @@ export run PATH=/home/$user/.scripts:$PATH
 cd ~
 echo "export PATH=/home/$user/.scripts:$PATH" >> .bashrc
 echo "export PATH=/home/$user/.scripts:$PATH" >> .zshrc
-cd -;
+cd - > /dev/null
 fi
