@@ -2,34 +2,34 @@
 
 script=$1
 
-if [ ! $script ]
+if [ ! "$script" ]
 then
-echo "Provide a script!"
-echo "script-to-path <script>"
-exit 1
+    echo "Provide a script!"
+    echo "script-to-path <script>"
+    exit 1
 fi
 
-if [ ! -e $script ]
+if [ ! -e "$script" ]
 then
-echo "$script was not found!"
-exit 1
+    echo "$script was not found!"
+    exit 1
 fi
 
 cd ~ > /dev/null
 
 if [ ! -d ".scripts" ]
 then
-mkdir .scripts
+    mkdir .scripts
 fi
 
 if [ -e ".scripts/$script" ]
 then
-echo "$script already in path!"
-exit 1
+    echo "$script already in path!"
+    exit 1
 fi
 
 cd - > /dev/null
-cp $script ~/.scripts
-chmod +x ~/.scripts/$script
+cp "$script" ~/.scripts
+chmod +x ~/.scripts/"$script"
 
 echo "$script added to path!"
